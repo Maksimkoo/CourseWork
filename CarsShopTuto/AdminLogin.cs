@@ -21,7 +21,7 @@ namespace CarsShopTuto
         {
             if(UPassTb.Text == "Password")
             {
-                CarsShop Obj = new CarsShop();
+                HomePage Obj = new HomePage();
                 Obj.Show();
                 this.Hide();
             }

@@ -44,8 +44,6 @@ namespace CarsShopTuto
             if(dt.Rows[0][0].ToString() == "1")
             {
                 UserName = UnameTb.Text;
-                Billing obj = new Billing();
-                obj.Show();
                 this.Hide();
                 Con.Close();
             }

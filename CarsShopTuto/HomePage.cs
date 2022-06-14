@@ -3,9 +3,9 @@ using System.Data.SqlClient;
 
 namespace CarsShopTuto
 {
-    public partial class CarsShop : Form
+    public partial class HomePage : Form
     {
-        public CarsShop()
+        public HomePage()
         {
             InitializeComponent();
             populate();
@@ -36,7 +36,7 @@ namespace CarsShopTuto
 
         }
        
-        /// /////////////////////////////////////////////// Carts Parts Shop Module ////////////////////////////////////////////////////////
+        /// /////////////////////////////////////////////// Довідник туриста головна сторінка ////////////////////////////////////////////////////////
         
         // Database conection
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Maksym\Documents\CarShopDb.mdf;Integrated Security=True;Connect Timeout=30");
@@ -203,19 +203,7 @@ namespace CarsShopTuto
             this.Hide();
         }
 
-        private void label7_Click(object sender, EventArgs e)
-        {
-            Users Obj = new Users();
-            Obj.Show();
-            this.Hide();
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-            DashBoard Obj = new DashBoard();
-            Obj.Show();
-            this.Hide();
-        }
+     
 
         private void CarsShop_Load(object sender, EventArgs e)
         {
@@ -228,6 +216,16 @@ namespace CarsShopTuto
         }
 
         private void backgroundWorker2_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
+        {
+
+        }
+
+        private void CTitleTb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }
